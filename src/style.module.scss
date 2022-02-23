@@ -1,0 +1,48 @@
+:global {
+  body {
+    margin: 0;
+    background-color: #fff;
+  }
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  position: relative;
+  .canvasBox {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh);
+    > canvas:nth-child(1) {
+      border-bottom: 1px solid #000;
+    }
+    > canvas:nth-child(3) {
+      border-bottom: 1px solid #000;
+    }
+    canvas {
+      height: calc((100vh) / 3);
+    }
+  }
+
+  .audioBox {
+    height: 55px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  .marks {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
